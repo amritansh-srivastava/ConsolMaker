@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    background-color: rgb(223, 223, 223);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+div{
+    background-color: #132440;
+    border-radius: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    height: 400px;
+    width: 50%;
+    min-width: 340px;
+    box-shadow: 0 0 50px 2px rgb(255, 243, 111);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div:hover{
+    background-color: #192f53;
+    transition: 0.2s ease;
+    box-shadow: 0 0 50px 2px rgb(255, 111, 111);
+    
+}
+
+div h2{
+    color: white;
+    font-size: 2.35rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Ubuntu',system-ui, '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div img{
+    width: 32%;
+}

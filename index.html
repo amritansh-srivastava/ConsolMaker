@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsolMaker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="brand-div">
+            <div class="image-div"></div>
+            <h2>ConsolMaker.</h2>
+        </div>
+        <div class="nav-link">
+            <a href="about.html" rel="noopener noreferrer">About Us</a>
+            <a href="#reach">Contact Us</a>
+            <a href="about.html" rel="noopener noreferrer">Help</a>
+        </div>
+        <div class="hamburger"></div>
+        <div class="hamburger-menu">
+            <div class="ham-nav-link">
+                <div class="cut">
+                    <div id="cut" style="background-image: url('Assets/forward.svg'); height: 100%; aspect-ratio: 1/1; background-size: cover;"></div>
+                </div>
+                <a href="about.html" rel="noopener noreferrer">About Us</a>
+                <a href="#reach">Contact Us</a>
+                <a href="about.html" rel="noopener noreferrer">Help</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div style=" @media (max-width: 1200px) {
+            display: flex;
+            justify-content: center;
+        }">
+            <div class="hero-content">
+                <h1>Does Your Business Work While You Sleep?</h1>
+                <p>The Future of Your Business Begins Online.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="info-section">
+
+        <div class="info-right">
+            <div class="info-bg-img">
+                <div class="info-content">
+                    <h1 >Rank. Reach. Revenue.</h1>
+                    <span>Maximize your online reach with comprehensive SEO solutions that help your business appear where your customers are searching.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-left">
+            <div class="seo-dashboard">
+                <!-- Header -->
+                <div class="dashboard-header">
+                    <div>
+                        <h2>SEO Analytics</h2>
+                        <p>Live Performance Overview</p>
+                    </div>
+            
+                    <div class="dashboard-status">
+                        <span class="status-dot"></span>
+                        <span>Live</span>
+                    </div>
+                </div>
+                <!-- KPI Cards -->
+                <div class="stats-grid">
+            
+                    <div class="stat-card">
+                        <p>Organic Traffic</p>
+                        <h3 class="counter" data-target="24800">0</h3>
+                        <span class="positive">▲ 18%</span>
+                    </div>
+            
+                    <div class="stat-card">
+                        <p>Keywords Ranked</p>
+                        <h3 class="counter" data-target="684">0</h3>
+                        <span class="positive">▲ 12%</span>
+                    </div>
+            
+                    <div class="stat-card">
+                        <p>Total Clicks</p>
+                        <h3 class="counter" data-target="9850">0</h3>
+                        <span class="positive">▲ 8%</span>
+                    </div>
+            
+                    <div class="stat-card">
+                        <p>Impressions</p>
+                        <h3 class="counter" data-target="3560000">0</h3>
+                        <span class="positive">▲ 23%</span>
+                    </div>
+            
+                    <div class="stat-card">
+                        <p>Conversions</p>
+                        <h3 class="counter" data-target="482">0</h3>
+                        <span class="positive">▲ 15%</span>
+                    </div>
+            
+                    <div class="stat-card">
+                        <p>SEO Score</p>
+                        <h3 class="counter" data-target="98">0</h3>
+                        <span class="positive">Excellent</span>
+                    </div>
+            
+                </div>
+            
+                <!-- Charts -->
+                <div class="charts-container">
+            
+                    <!-- Line Chart -->
+                    <div class="chart-card line-card">
+                        <div class="card-title">
+                            <h4>Traffic Growth</h4>
+                        </div>
+            
+                        <canvas id="trafficChart"></canvas>
+                    </div>
+            
+                    <!-- Bar Chart -->
+                    <div class="chart-card bar-card">
+                        <div class="card-title">
+                            <h4>Monthly Conversions</h4>
+                        </div>
+            
+                        <canvas id="conversionChart"></canvas>
+                    </div>
+            
+                    <!-- Doughnut Chart -->
+                </div>
+            
+                <!-- Bottom Cards -->
+                <div class="bottom-section">
+            
+                    <div class="activity-card">
+            
+                        <div class="activity-title">
+                            <h4>Recent SEO Improvements</h4>
+                        </div>
+            
+                        <ul>
+                            <li>
+                                <span class="check">✓</span>
+                                Core Web Vitals Improved
+                            </li>
+                            <li>
+                                <span class="check">✓</span>
+                                14 New Keywords Ranked
+                            </li>
+                            <li>
+                                <span class="check">✓</span>
+                                Technical Audit Passed
+                            </li>
+                            <li>
+                                <span class="check">✓</span>
+                                7 Backlinks Acquired
+                            </li>
+                        </ul>
+            
+                    </div>
+            
+                    <div class="score-card">
+                        <h2 class="counter" data-target="98">0</h2>
+                        <p>Overall SEO Health</p>
+                        <div class="score-progress">
+                            <div class="score-fill"></div>
+                        </div>
+            
+                        <span>Excellent Performance</span>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="detail-section">
+        <div class="detail-div">
+
+            <div class="detail-content-div">
+                <h2>Build Websites That Grow Your Business</h2>
+                <p> Modern. Fast. Scalable.</p>
+                <ul>
+                    <li><span>Custom Website Development</span></li>
+                    <li><span>Responsive Across All Devices</span></li>
+                    <li><span>SEO & Performance Optimized</span></li>
+                </ul>
+            </div>
+
+            <div class="video-div">
+                <div class="video">
+                    <video autoplay muted loop playsinline>
+                        <source src="Assets/hero-video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-section">
+
+        <div class="service-left">
+            <h2>Our Services</h2>
+            <div class="frame">
+                <div class="slider">
+                    <div class="card" id="firstcard"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
+            </div>
+        </div>
+        <div class="service-right">
+        </div>
+
+        <div class="arrow-div">
+            <div class="arrow left"></div>
+            <div class="arrow right"></div>
+        </div>
+        <div class="blur"></div>
+    </section>
+
+    <section class="engagement" id="reach">
+        <div class="testimonal-div">
+            <h2>What they are saying?</h2>
+            <div class="testimonal">
+                <ul>
+                    <li class="review-box">
+                        <div class="name">
+                            <h3>Sarah Johnson</h3>
+                            <span>CEO, Elevate Digital</span>
+                        </div>
+                        <p>"Their attention to detail and commitment to quality were outstanding. Our new website is visually stunning, mobile-friendly, and incredibly fast. We've received numerous compliments from clients since the launch."</p>
+                    </li>
+                    <li class="review-box">
+                        <div class="name">
+                            <h3>Michael Carter</h3>
+                            <span>Founder, NextWave Agency</span>
+                        </div>
+                        <p>"Professional, reliable, and highly skilled. They delivered exactly what they promised and even suggested improvements that enhanced the final product. I would confidently recommend them to any business looking for a high-quality website."</p>
+                    </li>
+                    <li class="review-box">
+                        <div class="name">
+                            <h3>Emily Brown</h3>
+                            <span>Marketing Manager, BrightPath</span>
+                        </div>
+                        <p>"Their expertise in web development and UI/UX design helped us create a website that truly reflects our brand. The project was completed on schedule, and the ongoing support has been excellent."</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="meeting-div">
+            <h2>You can Reach Us!</h2>
+            <form action="">
+                <input class="input"
+                    type="text"
+                    placeholder="Enter Your full name"
+                    required
+                >
+
+                <input class="input"
+                    type="email"
+                    placeholder="Enter Your email Adress"
+                    required
+                >
+
+                <input class="input"
+                    type="tel"
+                    placeholder="Contact Number"
+                    required
+                >
+
+                <textarea name="" class="message" rows="5" placeholder="Write your message..."></textarea>
+
+                <label for="Terms" class="whatsapp">
+                    <input type="checkbox" name="checkbox" class="checkbox" checked>
+                    I consent to being contacted by ConsolMaker. via WhatsApp regarding my inquiry and relevant service updates.
+                </label>
+
+                <button class="button">Connect With Us</button>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="brand">
+            <div class="brand-image"></div>
+            <h2> ConsolMaker.com</h2>
+        </div>
+
+        <div class="horizontal" style="width: 80vw; height: 0; border: 0.5px solid white;"></div>
+
+        <div class="footer-box">
+            <div class="faq">
+                <h3>Frequently Asked Questions (FAQ)</h3>
+                <div class="faq-box">
+                    <p>1. How long does it take to build a website?</p>
+                    <div class="open-faq"></div>
+                </div>
+
+                <div class="faq-box">
+                    <p>2. Will my website be mobile-friendly?</p>
+                    <div class="open-faq"></div>
+                </div>
+
+                <div class="faq-box">
+                    <p>3. Do you provide SEO services?</p>
+                    <div class="open-faq"></div>
+                </div>
+
+                <div class="faq-box">
+                    <p>4. Can I update my website after it's launched?</p>
+                    <div class="open-faq"></div>
+                </div>
+
+                <div class="faq-box">
+                    <p>5. How much does a website cost?</p>
+                    <div class="open-faq"></div>
+                </div>
+            </div>
+
+            <div class="horizontal-mob" style="width: 100vw; height: 0; border: 0.5px solid white;"></div>
+
+            <div class="link-div">
+                <div class="links">
+                    <p >Policies</p>
+                    <a href="about.html" rel="noopener noreferrer">Terms of Service </a>
+                    <a href="about.html" rel="noopener noreferrer">Privacy Policy </a>
+                    <a href="about.html" rel="noopener noreferrer">Payment Guide </a>
+                </div>
+                <div class="vertical" style="border: 0.5px solid white;"></div>
+
+                <div class="links">
+                    <p >Contact Us</p>
+                    <div class="contacts">
+                        <img src="Assets/whatsapp.svg" alt="" style="height: 28px;">
+                        <a href=""> +91 9125895673</a>
+                    </div>
+                    <div class="contacts">
+                        <img src="Assets/mail.svg" alt="" style="height: 28px;">
+                        <a href="">info@consolmaker.com</a>
+                    </div>
+                </div>
+
+                <div class="vertical" style="border: 0.5px solid white;"></div>
+
+                <div class="links">
+                    <p>More Connections</p>
+                    <div class="contacts">
+                        <img src="Assets/instagram.svg" alt="" style="height: 28px;">
+                        <a href="#">Instagram/ConsolMaker</a>
+                    </div>
+                    <div class="contacts">
+                        <img src="Assets/x.svg" alt="" style="height: 28px;">
+                        <a href="#">X/ConsolMaker</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

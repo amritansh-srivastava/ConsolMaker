@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConsolMaker</title>
     <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+
+    <script>
+        emailjs.init({
+        publicKey: "kjRbyirMHN5_HIOcF"
+        });
+    </script>
+
+    <script src="script.js" defer></script>
+
 </head>
 <body>
 
@@ -260,34 +272,67 @@
         </div>
         <div class="meeting-div" id="reach">
             <h2>You can Reach Us!</h2>
-            <form action="">
-                <input class="input"
+            <form id="contact-form">
+                <input
+                    class="input1"
                     type="text"
-                    placeholder="Enter Your full name"
+                    name="name"
+                    id="name"
+                    placeholder="Enter Your Full Name"
+                    autocomplete="name"
+                    maxlength="100"
                     required
                 >
-
-                <input class="input"
-                    type="email"
-                    placeholder="Enter Your email Adress"
-                    required
+            
+            <input
+                class="input1"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Your Email Address"
+                autocomplete="email"
+                maxlength="254"
+                required
+            >
+            
+            <input
+                class="input1"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Contact Number"
+                autocomplete="tel"
+                maxlength="20"
+                required
+            >
+            
+            <textarea
+                class="message"
+                name="message"
+                id="message"
+                rows="5"
+                placeholder="Write your message..."
+                maxlength="3000"
+                required
+            ></textarea>
+            
+            <label for="whatsapp-consent" class="whatsapp">
+                <input
+                    type="checkbox"
+                    name="whatsapp_consent"
+                    id="whatsapp-consent"
+                    value="Yes"
                 >
-
-                <input class="input"
-                    type="tel"
-                    placeholder="Contact Number"
-                    required
-                >
-
-                <textarea name="" class="message" rows="5" placeholder="Write your message..."></textarea>
-
-                <label for="Terms" class="whatsapp">
-                    <input type="checkbox" name="checkbox" class="checkbox" checked>
-                    I consent to being contacted by ConsolMaker. via WhatsApp regarding my inquiry and relevant service updates.
-                </label>
-
-                <button class="button">Connect With Us</button>
-
+                I agree to be contacted via WhatsApp regarding my enquiry
+                and relevant service updates.
+            </label>
+            
+            <button class="button" type="submit" id="submit-btn">
+                Connect With Us
+            </button>
+            
+            <p id="form-status" role="status" aria-live="polite"></p>
+            
             </form>
         </div>
     </section>
@@ -404,10 +449,6 @@
         </div>
         
     </footer>
-
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="dashboard.js"></script>
 
 </body>
 </html>

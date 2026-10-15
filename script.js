@@ -106,11 +106,13 @@ if (contactForm) {
 
         } catch (error) {
             console.error("EmailJS error details:", error);
-        
-            alert(
-                "Failed to send: " +
-                (error.text || error.message || "Unknown error")
-            );
+
+            const errorMessage =
+            error?.text ||
+            error?.message ||
+            JSON.stringify(error);
+
+            alert("EmailJS error: " + errorMessage);
         }
     });
 }

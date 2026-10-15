@@ -1,41 +1,135 @@
-body{
-    display: flex;
-    background-color: rgb(223, 223, 223);
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+*{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-div{
+html {
+    scroll-behavior: smooth;
+}
+
+.logo{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-image: url('Assets/cosolmaker_logo2.svg');
+    height: 65px;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    border-radius: 35%;
+}
+nav{
     background-color: #132440;
-    border-radius: 30px;
-    border: 2px solid rgb(0, 0, 0);
-    height: 400px;
-    width: 50%;
-    min-width: 340px;
-    box-shadow: 0 0 50px 2px rgb(255, 243, 111);
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 80px 15px 80px;
+}
+
+nav .brand{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    cursor: pointer;
+
 }
 
-div:hover{
-    background-color: #192f53;
-    transition: 0.2s ease;
-    box-shadow: 0 0 50px 2px rgb(255, 111, 111);
-    
-}
-
-div h2{
+nav a{
+    text-decoration: none;
     color: white;
-    font-size: 2.35rem;
-    font-weight: 400;
-    text-align: center;
-    font-family: 'Ubuntu',system-ui, '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-div img{
-    width: 32%;
+nav .image-div{
+    background-image: url('Assets/cosolmaker_logo2.svg');
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.head{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.about{
+    background-color: rgb(233, 233, 233);
+    margin: 20px 0 20px 0;
+    padding: 20px 40px 20px 40px;
+}
+
+.about h2, h3{ 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #132440;
+    margin-bottom: 15px;
+}
+
+.about h3{ 
+    text-decoration: underline;
+    margin-top: 30px;
+}
+
+.about p, ul{ 
+    font-family:  'Ubuntu',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #132440;
+    font-size: 1.15rem;
+    margin-bottom: 7px;
+}
+
+.about ul{ 
+    padding: 7px 0 10px 40px;
+}
+
+.about li{ 
+    margin: 7px;
+}
+
+footer{
+    background-color: #132440;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer div{
+    margin-top: 20px;
+}
+
+footer p{
+    margin-top: 7px;
+}
+
+@media (max-width: 1200px){
+
+    nav .brand{
+        display: none;
+    }
+
+    nav .head{
+        font-size: 0.7rem;
+    }
+
+    .about{
+        margin: 10px 0 10px 0;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .about p, ul{ 
+        font-size: 0.9rem;
+    }
+
+    .about ul{ 
+        padding: 7px 0 10px 20px;
+    }
+
+    footer{
+        font-size: 0.8rem;
+    }
+
+    .logo{
+        height: 45px;
+        aspect-ratio: 1/1;
+    }
 }

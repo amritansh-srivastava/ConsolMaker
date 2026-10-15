@@ -14,7 +14,7 @@
             <h2>ConsolMaker.</h2>
         </div>
         <div class="nav-link">
-            <a href="about.html" rel="noopener noreferrer">About Us</a>
+            <a href="about.html#about-us-div" rel="noopener noreferrer">About Us</a>
             <a href="#reach">Contact Us</a>
             <a href="about.html" rel="noopener noreferrer">Help</a>
         </div>
@@ -24,8 +24,8 @@
                 <div class="cut">
                     <div id="cut" style="background-image: url('Assets/forward.svg'); height: 100%; aspect-ratio: 1/1; background-size: cover;"></div>
                 </div>
-                <a href="about.html" rel="noopener noreferrer">About Us</a>
-                <a href="#reach">Contact Us</a>
+                <a href="about.html#about-us-div" rel="noopener noreferrer">About Us</a>
+                <a href="#reach"> Contact Us</a>
                 <a href="about.html" rel="noopener noreferrer">Help</a>
             </div>
         </div>
@@ -74,37 +74,37 @@
             
                     <div class="stat-card">
                         <p>Organic Traffic</p>
-                        <h3 class="counter" data-target="24800">0</h3>
+                        <h3 class="count-up" data-target="24800">12,788</h3>
                         <span class="positive">▲ 18%</span>
                     </div>
             
                     <div class="stat-card">
                         <p>Keywords Ranked</p>
-                        <h3 class="counter" data-target="684">0</h3>
+                        <h3 class="count-up" data-target="684">3,974</h3>
                         <span class="positive">▲ 12%</span>
                     </div>
             
                     <div class="stat-card">
                         <p>Total Clicks</p>
-                        <h3 class="counter" data-target="9850">0</h3>
+                        <h3 class="counter" data-target="9850">1,574</h3>
                         <span class="positive">▲ 8%</span>
                     </div>
             
                     <div class="stat-card">
                         <p>Impressions</p>
-                        <h3 class="counter" data-target="3560000">0</h3>
+                        <h3 class="counter" data-target="3560000">44,342</h3>
                         <span class="positive">▲ 23%</span>
                     </div>
             
                     <div class="stat-card">
                         <p>Conversions</p>
-                        <h3 class="counter" data-target="482">0</h3>
+                        <h3 class="counter" data-target="482">8,765</h3>
                         <span class="positive">▲ 15%</span>
                     </div>
             
                     <div class="stat-card">
                         <p>SEO Score</p>
-                        <h3 class="counter" data-target="98">0</h3>
+                        <h3 class="counter" data-target="98">82</h3>
                         <span class="positive">Excellent</span>
                     </div>
             
@@ -114,24 +114,18 @@
                 <div class="charts-container">
             
                     <!-- Line Chart -->
-                    <div class="chart-card line-card">
+                    <div class="chart-card line-chart">
                         <div class="card-title">
                             <h4>Traffic Growth</h4>
                         </div>
-            
-                        <canvas id="trafficChart"></canvas>
                     </div>
             
                     <!-- Bar Chart -->
-                    <div class="chart-card bar-card">
+                    <div class="chart-card bar-chart">
                         <div class="card-title">
                             <h4>Monthly Conversions</h4>
                         </div>
-            
-                        <canvas id="conversionChart"></canvas>
                     </div>
-            
-                    <!-- Doughnut Chart -->
                 </div>
             
                 <!-- Bottom Cards -->
@@ -165,7 +159,7 @@
                     </div>
             
                     <div class="score-card">
-                        <h2 class="counter" data-target="98">0</h2>
+                        <h2 class="counter" data-target="98">94</h2>
                         <p>Overall SEO Health</p>
                         <div class="score-progress">
                             <div class="score-fill"></div>
@@ -210,15 +204,22 @@
             <div class="frame">
                 <div class="slider">
                     <div class="card" id="firstcard"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
+                    <div class="card" style="background-image: url('Assets/webdev.png');"></div>
+                    <div class="card" style="background-image: url('Assets/digitalmarket.png');"></div>
+                    <div class="card" style="background-image: url('Assets/seo.png');"></div>
+                    <div class="card" style="background-image: url('Assets/consultancy.png');"></div>
+                    <div class="card" style="background-image: url('Assets/appdev-na.png');"></div>
                 </div>
             </div>
         </div>
         <div class="service-right">
+            <div class="serivice-border">
+                <h2>Website Development</h2>
+                <h2>Digital Marketing</h2>
+                <h2>SEO Optimization</h2>
+                <h2>Digital consultancy</h2>
+                <h2 style="color: rgb(155, 154, 154);">Application Development</h2>
+            </div>
         </div>
 
         <div class="arrow-div">
@@ -228,7 +229,7 @@
         <div class="blur"></div>
     </section>
 
-    <section class="engagement" id="reach">
+    <section class="engagement">
         <div class="testimonal-div">
             <h2>What they are saying?</h2>
             <div class="testimonal">
@@ -257,7 +258,7 @@
                 </ul>
             </div>
         </div>
-        <div class="meeting-div">
+        <div class="meeting-div" id="reach">
             <h2>You can Reach Us!</h2>
             <form action="">
                 <input class="input"
@@ -294,37 +295,72 @@
     <footer>
         <div class="brand">
             <div class="brand-image"></div>
-            <h2> ConsolMaker.com</h2>
+            <div class="brand-name">
+                <h2> ConsolMaker.com</h2>
+                <p style="color: white; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">&copy; 2026 ConsolMaker. All rights reserved.</p>
+            </div>
         </div>
+    
 
-        <div class="horizontal" style="width: 80vw; height: 0; border: 0.5px solid white;"></div>
+        <div class="horizontal" style="width: 93vw; height: 0; border: 0.5px solid white;"></div>
 
         <div class="footer-box">
             <div class="faq">
                 <h3>Frequently Asked Questions (FAQ)</h3>
+
                 <div class="faq-box">
-                    <p>1. How long does it take to build a website?</p>
-                    <div class="open-faq"></div>
+                    <div class="ques">
+                        <p>1. How long does it take to build a website?</p>
+                        <div class="open-faq"></div>
+                    </div>
+
+                    <div class="ans">
+                        <p>The timeline depends on the project's complexity. A standard business website typically takes 2–4 weeks, while larger custom websites or e-commerce platforms may require 4–8 weeks or more.</p>
+                    </div>
                 </div>
 
                 <div class="faq-box">
-                    <p>2. Will my website be mobile-friendly?</p>
-                    <div class="open-faq"></div>
+                    <div class="ques">
+                        <p>2. Will my website be mobile-friendly?</p>
+                        <div class="open-faq"></div>
+                    </div>
+
+                    <div class="ans">
+                        <p>Yes. Every website we develop is fully responsive, ensuring it looks and performs seamlessly on desktops, tablets, and smartphones.</p>
+                    </div>
                 </div>
 
                 <div class="faq-box">
-                    <p>3. Do you provide SEO services?</p>
-                    <div class="open-faq"></div>
+                    <div class="ques">
+                        <p>3. Do you provide SEO services?</p>
+                        <div class="open-faq"></div>
+                    </div>
+
+                    <div class="ans">
+                        <p>Absolutely. We build websites with SEO best practices in mind and also offer comprehensive SEO services, including keyword research, on-page optimization, technical SEO, and local SEO to improve your online visibility.</p>
+                    </div>
                 </div>
 
                 <div class="faq-box">
-                    <p>4. Can I update my website after it's launched?</p>
-                    <div class="open-faq"></div>
+                    <div class="ques">
+                        <p>4. Can I update my website after it's launched?</p>
+                        <div class="open-faq"></div>
+                    </div>
+
+                    <div class="ans">
+                        <p>Yes. If your website includes a Content Management System (CMS), you'll be able to update text, images, and other content yourself. We also offer ongoing maintenance and support if you'd prefer us to handle updates.</p>
+                    </div>
                 </div>
 
                 <div class="faq-box">
-                    <p>5. How much does a website cost?</p>
-                    <div class="open-faq"></div>
+                    <div class="ques">
+                        <p>5. How much does a website cost?</p>
+                        <div class="open-faq"></div>
+                    </div>
+
+                    <div class="ans">
+                        <p>The cost depends on your requirements, such as the number of pages, features, design complexity, and integrations. Contact us for a free consultation, and we'll provide a customized quote based on your needs.</p>
+                    </div>
                 </div>
             </div>
 
@@ -333,9 +369,9 @@
             <div class="link-div">
                 <div class="links">
                     <p >Policies</p>
-                    <a href="about.html" rel="noopener noreferrer">Terms of Service </a>
-                    <a href="about.html" rel="noopener noreferrer">Privacy Policy </a>
-                    <a href="about.html" rel="noopener noreferrer">Payment Guide </a>
+                    <a href="about.html#termscondition" rel="noopener noreferrer">Terms of Service </a>
+                    <a href="about.html#Privacy-div" rel="noopener noreferrer">Privacy Policy </a>
+                    <a href="about.html#payment-detail-div" rel="noopener noreferrer">Payment Guide </a>
                 </div>
                 <div class="vertical" style="border: 0.5px solid white;"></div>
 

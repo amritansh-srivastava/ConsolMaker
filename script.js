@@ -105,8 +105,12 @@ if (contactForm) {
             contactForm.reset();
 
         } catch (error) {
-            console.error("EmailJS error:", error);
-            alert("Failed to send your enquiry. Check the Console.");
+            console.error("EmailJS error details:", error);
+        
+            alert(
+                "Failed to send: " +
+                (error.text || error.message || "Unknown error")
+            );
         }
     });
 }

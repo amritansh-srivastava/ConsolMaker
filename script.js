@@ -76,10 +76,37 @@ left.addEventListener('mousemove', ()=>{
     left.style.cursor = "pointer";
 })
 
-const btn = document.querySelector('#btn');
 
-btn.addEventListener('click', (e)=>{
-    e.preventDefault();
-    btn.innerHTML = "We will reach you";
-    btn.style.backgroundColor = "green";
-})
+
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        try {
+            const response = await emailjs.sendForm(
+                "service_2w77vxn",
+                "template_p3vxgew",
+                contactForm
+            );
+
+            console.log("Email sent:", response.status);
+
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+            if (submitBtn) {
+                submitBtn.textContent = "We will reach You";
+                submitBtn.style.backgroundColor = "#28a745";
+                submitBtn.style.borderColor = "#28a745";
+                submitBtn.style.color = "#ffffff";
+                submitBtn.disabled = true;
+            }
+            contactForm.reset();
+
+        } catch (error) {
+            console.error("EmailJS error:", error);
+            alert("Failed to send your enquiry. Check the Console.");
+        }
+    });
+}
